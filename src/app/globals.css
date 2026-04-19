@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #F8F9FC;
+  color: #0F1117;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F8F9FC; }
+::-webkit-scrollbar-thumb { background: rgba(37,99,235,0.2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(37,99,235,0.4); }
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.card-hover {
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  border-color: rgba(37,99,235,0.25) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 24px rgba(37,99,235,0.08);
+}
+
+.tag-blue    { background: rgba(37,99,235,0.08);  color: #1D4ED8; border: 0.5px solid rgba(37,99,235,0.2); }
+.tag-green   { background: rgba(22,163,74,0.08);  color: #15803D; border: 0.5px solid rgba(22,163,74,0.2); }
+.tag-amber   { background: rgba(180,120,20,0.08); color: #92620A; border: 0.5px solid rgba(180,120,20,0.2); }
+.tag-teal    { background: rgba(13,148,136,0.08); color: #0F766E; border: 0.5px solid rgba(13,148,136,0.2); }
+.tag-purple  { background: rgba(109,40,217,0.08); color: #6D28D9; border: 0.5px solid rgba(109,40,217,0.2); }
+
+.platform-aws        { background: rgba(180,120,20,0.08); color: #92620A; border: 0.5px solid rgba(180,120,20,0.25); }
+.platform-gcp        { background: rgba(37,99,235,0.08);  color: #1D4ED8; border: 0.5px solid rgba(37,99,235,0.25); }
+.platform-databricks { background: rgba(220,38,38,0.08);  color: #B91C1C; border: 0.5px solid rgba(220,38,38,0.25); }
+.platform-snowflake  { background: rgba(13,148,136,0.08); color: #0F766E; border: 0.5px solid rgba(13,148,136,0.25); }
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(15,17,23,0.4);
+}
+
+.chat-bubble { position: fixed; bottom: 28px; right: 28px; z-index: 50; }
+
+.chat-panel {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  width: 380px;
+  max-height: 560px;
+  z-index: 50;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  .chat-panel { width: calc(100vw - 32px); right: 16px; bottom: 80px; }
+}
