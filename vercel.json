@@ -3,4 +3,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cfc0ec7aed616ef4112e31cf9fbf968c30d7686f
