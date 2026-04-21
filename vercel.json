@@ -2,9 +2,8 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install"
-<<<<<<< HEAD
+  "installCommand": "npm install",
+  "env": {
+    "NEXT_PUBLIC_GEMINI_API_KEY": "@gemini_api_key"
+  }
 }
-=======
-}
->>>>>>> cfc0ec7aed616ef4112e31cf9fbf968c30d7686f
