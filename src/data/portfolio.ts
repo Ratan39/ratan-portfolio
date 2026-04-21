@@ -277,14 +277,12 @@ export const experience = [
     location: "Hyderabad, India",
     type: "Full-time",
     bullets: [
-      "Engineered a cost-effective ETL pipeline using AWS Glue to ingest Salesforce Campaign and Fundraiser data,implementing custom Python logic for OAuth-based authentication and incremental data synchronization.",
-      "Orchestrated complex data workflows via AWS Step Functions and Redshift COPY commands with automated retry logic.",
-      "Automated infrastructure and code deployment using GitHub Actions CI/CD with automated testing for Glue scripts.",
-      "Optimized Redshift performance via Incremental Loading (CDC) contributing to 15% increase in donor retention and $1M in additional annual revenue.",
-      "Implemented S3 Event Notifications and AWS Lambda for real-time processing of sensitive employee salary files, ensuring 100% audit compliance.",
-      "Built interactive dashboards in Amazon QuickSight for HR and leadership teams across audit, payroll, reimbursement and benefits.",
+      "Built an ETL pipeline using AWS Glue to ingest Salesforce Campaign and Fundraiser data, implementing custom Python logic for OAuth-based authentication and incremental data synchronization.",
+      "Orchestrated multi-step data workflows via AWS Step Functions, AWS Glue, Redshift COPY operations, and automated retry logic, reducing pipeline failures by 40% and ensuring fundraiser data was always reporting-ready.",
+      "Implemented GitHub Actions CI/CD pipeline for Glue scripts with automated unit tests, reducing deployment errors and enabling safe, repeatable releases without manual intervention.",
+      "Delivered clean, timely Campaign data to leadership dashboards, directly supporting donor outreach strategies that contributed to a 15% improvement in donor retention and ₹50L in incremental annual donations, outcomes made possible by previously unavailable data visibility.",
     ],
-    stack: ["AWS AppFlow", "Step Functions", "Redshift", "Glue", "Lambda", "S3", "GitHub Actions", "QuickSight"],
+    stack: ["Step Functions", "Redshift", "Glue", "Lambda", "S3", "GitHub Actions", "QuickSight"],
   },
 ];
 
