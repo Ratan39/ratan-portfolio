@@ -257,10 +257,10 @@ export const certifications = {
 export const experience = [
   {
     company: "Saint Louis University",
-    role: "Research Assistant — AI & Data",
+    role: "Graduate Data scientist",
     period: "August 2025 – Present",
     location: "St. Louis, MO",
-    type: "Research",
+    type: "Full-time",
     bullets: [
       "Engineered automated clinical-to-code mapping engine extracting ICD-10 and CPT codes from unstructured clinical notes using NLP, achieving 88% F1-score against labeled Synthea datasets.",
       "Optimized code prediction accuracy by implementing a RAG framework with ChromaDB, providing high-fidelity clinical context to the LLM during inference.",
@@ -285,7 +285,7 @@ export const experience = [
   },
   {
     company: "Saint Louis University",
-    role: "Database Developer",
+    role: "Database Administrater",
     period: "April 2024 – December 2024",
     location: "St. Louis, MO",
     type: "Part-time",
@@ -299,9 +299,22 @@ export const experience = [
     stack: ["Python", "Excel", "Tableau", "SQL", "Database Design", "Statistical Analysis"],
   },
   {
+    company: "Oi",
+    role: "Data Engineer",
+    period: "August 2021 – September 2023",
+    location: "Hyderabad, India",
+    type: "Full-time",
+    bullets: [
+      "Ingested and unified data from Veeva, Salesforce, and third-party providers into Delta Lake on Databricks, creating a single source of truth for marketing and campaign analytics.",
+      "Built analytics-ready data marts in Azure Synapse enabling real-time visibility into campaign performance for business stakeholders.",
+      "Optimized data pipelines to reduce compute costs and improve data freshness, ensuring timely and cost-efficient delivery of insights.",
+    ],
+    stack: ["Databricks", "Delta Lake", "Azure Synapse", "Salesforce", "Veeva", "PySpark", "SQL"],
+  },
+  {
     company: "Teach For India",
     role: "Data Engineer",
-    period: "April 2019 – April 2022",
+    period: "April 2019 – july 2021",
     location: "Hyderabad, India",
     type: "Full-time",
     bullets: [
@@ -312,6 +325,19 @@ export const experience = [
       "Implemented Terraform for multi-environment (dev/staging/prod) infrastructure and GitHub Actions CI/CD with pytest, achieving 100% audit compliance on sensitive data pipelines.",
     ],
     stack: ["AWS Lambda", "S3", "Glue", "PySpark", "Redshift", "dbt", "Step Functions", "Terraform", "GitHub Actions", "QuickSight"],
+  },
+  {
+    company: "Marketing Data Analyst Intern",
+    role: "Marketing Data Analyst Intern",
+    period: "September 2018 – March 2019",
+    location: "Hyderabad, India",
+    type: "Internship",
+    bullets: [
+      "Analyzed Google Analytics data to identify opportunities for improving click-through rates by refining keyword strategies and audience targeting, achieving a 37% decrease in cost per click (CPC).",
+      "Conducted in-depth sales data analysis using Python and SQL to clean and transform data, then built interactive Tableau and Power BI dashboards driving 1.5% month-over-month sales growth.",
+      "Developed and maintained Excel macros, pivot tables, and advanced data analysis (VLOOKUP), improving data processing and trend identification resulting in an 18% increase in business performance.",
+    ],
+    stack: ["Python", "SQL", "Google Analytics", "Tableau", "Power BI", "Excel"],
   },
 ];
 
