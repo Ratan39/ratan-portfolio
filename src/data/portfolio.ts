@@ -1,26 +1,24 @@
 export const personal = {
   name: "Ratan Sai Mandela",
-  title: "Data Engineer & AI Builder",
+  title: "Data Engineer & AI Developer",
   tagline: "Turning raw data into reliable, intelligent systems",
-  bio: "AWS-Certified Data Engineer with 2+ years of experience designing high-performance ETL pipelines and scalable analytics platforms. Specialized in real-time streaming, cloud-native architectures, and AI-powered data systems across AWS, GCP, Databricks, and Snowflake.",
+  bio: "AWS-Certified Data Engineer with 6+ years of experience designing high-performance ETL pipelines and scalable analytics platforms. Specialized in Batch & Real-time streaming, cloud-native architectures, and AI-powered data systems across AWS, GCP, Azure.",
   email: "mandelaratansai1@mail.com",
   linkedin: "https://www.linkedin.com/in/ratan-sai-mandela-72045a217",
   github: "https://github.com/Ratan39",
   location: "St. Louis, MO",
   status: "Open to work",
-  statusDetail: "Actively seeking roles in AI, Data Engineering & Data Analytics",
+  statusDetail: "Actively seeking roles in Data Engineering & AI/ML",
   stats: [
-    { value: "2+", label: "Years experience" },
-    { value: "8", label: "Projects shipped" },
-    { value: "2", label: "AWS certifications" },
-    { value: "50M+", label: "Records processed" },
+    { value: "6+", label: "Years experience" },
+    { value: "50M+", label: "Records processed per day" },
   ],
 };
 
 export const skills = {
   de: ["Apache Spark", "Kafka", "Airflow", "dbt", "AWS Glue", "Step Functions", "Dataproc", "Delta Lake"],
   ai: ["Python", "LangChain", "RAG", "XGBoost", "NLP", "MedGemma", "RLHF", "Streamlit"],
-  cloud: ["AWS", "GCP", "Databricks", "Snowflake", "BigQuery", "Redshift", "S3", "Lambda"],
+  cloud: ["AWS", "GCP", "Azure","Databricks", "Snowflake"],
   viz: ["Tableau", "Power BI", "QuickSight", "Plotly", "Altair"],
 };
 
